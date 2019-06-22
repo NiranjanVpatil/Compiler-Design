@@ -1,0 +1,94 @@
+References :
+
+https://www.oreilly.com/library/view/lex-yacc/9781565920002/ch01.html
+
+http://techapple.net/2014/07/flex-windows-lex-and-yacc-flex-and-bison-installer-for-windows-xp788-1/
+
+https://stackoverflow.com/questions/5456011/how-to-compile-lex-yacc-files-on-windows
+
+https://i.stack.imgur.com/8sd8U.png
+
+https://www.cse.iitb.ac.in/~br/courses/cs699-autumn2013/refs/lextut-victor-eijkhout.pdf
+
+
+
+OUTPUT:
+C:\Users\Admin\Desktop>flex lex_niru.l
+
+C:\Users\Admin\Desktop>gcc lex.yy.c y.tab.c -o lex_niru.exe
+gcc: error: y.tab.c: No such file or directory
+
+C:\Users\Admin\Desktop>gcc lex.yy.c -o lex_niru.exe
+
+C:\Users\Admin\Desktop>dir
+ Volume in drive C is Win7
+ Volume Serial Number is C061-DBE1
+
+ Directory of C:\Users\Admin\Desktop
+
+12/01/2018  07:25 PM    <DIR>          .
+12/01/2018  07:25 PM    <DIR>          ..
+12/01/2018  06:50 PM                 0 .l
+10/22/2011  02:49 PM           286,208 CLEANUP.EXE
+12/01/2018  07:18 PM               599 Dev-C++.lnk
+07/15/2018  08:43 PM             1,051 Eclipse Java Oxygen.lnk
+11/28/2018  11:03 PM             1,011 EditPlus.lnk
+08/19/2018  12:06 AM               684 Entertainmen - Shortcut.lnk
+12/01/2018  06:33 PM               572 Flex Windows (Lex and Yacc).lnk
+11/25/2018  12:49 PM    <DIR>          Gallery
+12/02/2017  08:35 PM             2,259 Google Chrome.lnk
+12/01/2018  07:24 PM            40,610 lex.yy.c
+12/01/2018  07:25 PM            33,477 lex_niru.exe
+12/01/2018  06:41 PM               559 lex_niru.l
+12/01/2018  06:25 PM               494 niru.l
+12/01/2018  06:24 PM                 0 niru.l.bak
+08/18/2018  04:38 PM            11,203 Shirt Timetable.xlsx
+10/31/2018  11:20 PM    <DIR>          Study
+              14 File(s)        378,727 bytes
+               4 Dir(s)  31,220,514,816 bytes free
+
+C:\Users\Admin\Desktop>lex_niru.exe
+My name is niru
+My: is not a verb
+name: is not a verb
+is: is a verb
+niru: is not a verb
+
+Hello everyone i like love and my passion is programming i am lucky boy i will b
+e officer
+Hello: is not a verb
+everyone: is not a verb
+i: is not a verb
+like: is not a verb
+love: is not a verb
+and: is not a verb
+my: is not a verb
+passion: is not a verb
+is: is a verb
+programming: is not a verb
+i: is not a verb
+am: is a verb
+lucky: is not a verb
+boy: is not a verb
+i: is not a verb
+will: is a verb
+be: is a verb
+officer: is not a verb
+
+
+
+did I have fun ?
+did: is a verb
+I: is not a verb
+have: is a verb
+fun: is not a verb
+?
+is will be tomorrow I am not sure
+is: is a verb
+will: is a verb
+be: is a verb
+tomorrow: is not a verb
+I: is not a verb
+am: is a verb
+not: is not a verb
+sure: is not a verb
